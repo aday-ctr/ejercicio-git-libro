@@ -210,10 +210,57 @@ git add .
 cat > capitulos/capitulo4.txt
 En este capítulo veremos cómo usar GitHub para alojar repositorios en remoto.
 ```
-Para salir usamos Ctrl+D
+Para salir usamos **Ctrl+D**
+
+```code
+git add .
+```
 
 ### Hacer un commit
 
 ```code
+git commit -m "Añadido capítulo 4."
+[main e34e1c0] Añadido capítulo 4.
+ 3 files changed, 48 insertions(+), 17 deletions(-)
+ create mode 100644 capitulos/capitulo4.txt
+ delete mode 100644 kj gshkbr
+```
 
+### Mostrar la historia del repositorio incluyendo todas las ramas.
+
+```code 
+git log --graph --all --oneline
+* e34e1c0 (HEAD -> main) Añadido capítulo 4.
+* 2bbb386 (origin/main, bibliografia) Añadido el índice .
+* 90c93c0 Se crea el indice.
+* c7f96a3 Añadido capítulo 3.
+* c01e574 Añadido capítulo 2.
+* 5ad0e90 Añadido capítulo 1.
+```
+
+## EJercicio 7
+
+### Cambiar a la rama bibliografía.
+
+```code
+git checkout bibliografia
+error: Los cambios locales de los siguientes archivos serán sobrescritos por checkout:
+        README.md
+Por favor realice un commit con los cambios o un stash antes de cambiar ramas.
+Abortando
+```
+
+### Crear el fichero bibliografia.txt y añadir la siguiente referencia:
+
+```code
+cat > bibliografia.txt
+- Chacon, S. and Straub, B. Pro Git. Apress.
+```
+
+**Ctrl+D**
+
+### Añadir los cambios a la zona de intercambio temporal.
+
+```code
+git add .
 ```
