@@ -384,10 +384,24 @@ cat > bibliografia.txt
 
 ```code
 git add .
+
+git commit -a -m "Añadida nueva referencia bibliográfica."
+[main 0910f9b] Añadida nueva referencia bibliográfica.
+ 2 files changed, 129 insertions(+)
 ```
 
 ### Fusionar la rama bibliografía con la rama main.
 
 ```code 
-
+git merge bibliografia
+Ya está actualizado.
 ```
+
+### Resolver el conflicto dejando el fichero bibliografia.txt con las referencias:
+
+```code
+Chacon, S. and Straub, B. Pro Git. Apress.
+Loeliger, J. and McCullough, M. Version control with Git. O’Reilly.
+Hodson, R. Ry’s Git Tutorial. Smashwords (2014)
+```
+
