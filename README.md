@@ -121,3 +121,40 @@ Git permite la creación de ramas lo que permite tener distintas versiones del m
 ```code 
 git add .
 ```
+
+### Hacer un commit de los cambios.
+
+```code
+git commit -m "Añadido capítulo 3."
+[main c7f96a3] Añadido capítulo 3.
+ 2 files changed, 38 insertions(+)
+ create mode 100644 capitulos/capitulo3.txt
+```
+
+### Mostrar las diferencias entre la primera y la última versión del repositorio.
+
+```code
+git diff 5ad0e9060ed3d2d96fb9e4d28d4df8a1d2e2f1f5..HEAD
+diff --git a/README.md b/README.md
+index a0cd1d4..5e0cd3a 100644
+--- a/README.md
++++ b/README.md
+@@ -39,3 +39,85 @@ mkdir capitulos
+ cat > capitulos/capitulo1.txt
+ Git es un sistema de control de versiones ideado por Linus Torv
+```
+
+## Ejercicio 4
+
+### Crea el fichero
+
+```code
+cat >indice.txt
+Indice de los cápitulos, con conceptos avanzados de git
+```
+
+### Añadir los cambios a la zona de intercambio temporal.
+
+```code
+
+```
