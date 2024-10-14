@@ -264,3 +264,130 @@ cat > bibliografia.txt
 ```code
 git add .
 ```
+
+### Hacer un commit con el mensaje “Añadida primera referencia bibliográfica.”
+
+```code
+git commit -m "Añadida primera referencia bibliográfica."
+[main 2b09558] Añadida primera referencia bibliográfica.
+ 2 files changed, 49 insertions(+), 1 deletion(-)
+ create mode 100644 bibliografia.txt
+```
+
+### Mostrar la historia del repositorio incluyendo todas las ramas.
+
+```code
+git log --graph --all --oneline
+* 2b09558 (HEAD -> main) Añadida primera referencia bibliográfica.
+* e34e1c0 (origin/main) Añadido capítulo 4.
+* 2bbb386 (bibliografia) Añadido el índice .
+* 90c93c0 Se crea el indice.
+* c7f96a3 Añadido capítulo 3.
+* c01e574 Añadido capítulo 2.
+* 5ad0e90 Añadido capítulo 1.
+```
+
+## Ejercicio 8
+
+### Fusionar la rama bibliografía con la rama main.
+
+```code
+git checkout main
+M       README.md
+Ya en 'main'
+Tu rama está actualizada con 'origin/main'.
+
+git merge bibliografia
+Ya está actualizado.
+```
+
+### Mostrar la historia del repositorio incluyendo todas las ramas.
+
+```code
+git log --graph --all --oneline
+* 2b09558 (HEAD -> main, origin/main) Añadida primera referencia bibliográfica.
+* e34e1c0 Añadido capítulo 4.
+* 2bbb386 (bibliografia) Añadido el índice .
+* 90c93c0 Se crea el indice.
+* c7f96a3 Añadido capítulo 3.
+* c01e574 Añadido capítulo 2.
+* 5ad0e90 Añadido capítulo 1.
+```
+
+### Eliminar la rama bibliografía.
+
+```code
+git branch -d bibliografia   
+Eliminada la rama bibliografia (era 2bbb386).
+```
+
+### Mostrar de nuevo la historia del repositorio incluyendo todas las ramas.
+
+```code
+git log --graph --all --oneline
+* 2b09558 (HEAD -> main, origin/main) Añadida primera referencia bibliográfica.
+* e34e1c0 Añadido capítulo 4.
+* 2bbb386 Añadido el índice .
+* 90c93c0 Se crea el indice.
+* c7f96a3 Añadido capítulo 3.
+* c01e574 Añadido capítulo 2.
+* 5ad0e90 Añadido capítulo 1.
+```
+
+## Ejercicio 9
+
+### Crear la rama bibliografía.
+
+```code
+git branch bibliografia
+```
+
+### Cambiar a la rama bibliografía.
+
+```code
+git checkout bibliografia
+M       README.md
+Cambiado a rama 'bibliografia'
+```
+
+### Cambiar el fichero bibliografia.txt para que contenga las siguientes referencias:
+
+```code
+cat > bibliografia.txt
+- Scott Chacon and Ben Straub. Pro Git. Apress.
+- Ryan Hodson. Ry's Git Tutorial. Smashwords (2014)
+```
+
+**Ctrl+D** salimos del cat.
+
+### Cambiar a la rama main.
+
+```code
+git checkout main
+M       README.md
+M       bibliografia.txt
+Cambiado a rama 'main'
+Tu rama está actualizada con 'origin/main'.
+```
+
+### Cambiar el fichero bibliografia.txt para que - contenga las siguientes referencias:
+
+```code
+cat > bibliografia.txt
+- Chacon, S. and Straub, B. Pro Git. Apress.
+- Loeliger, J. and McCullough, M. Version control with Git. O'Reilly.
+```
+
+**Ctrl+D** salimos del cat.
+
+### Añadir los cambios a la zona de intercambio temporal y hacer un commit con el mensaje “Añadida nueva referencia bibliográfica.”
+
+```code
+git add .
+```
+
+### Fusionar la rama bibliografía con la rama main.
+
+```code 
+
+```
