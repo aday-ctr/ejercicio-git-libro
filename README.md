@@ -169,4 +169,51 @@ git commit -m "Se crea el indice."
  create mode 100644 kj gshkbr
 
 echo "Indice de los cápitulos, con conceptos avanzados de git" >> indice.txt
+
+git add .
+```
+
+### Mostrar quién ha hecho cambios sobre el fichero indice.txt.
+
+```code
+git commit -m "Añadido el índice ."
+[main 2bbb386] Añadido el índice .
+ 2 files changed, 14 insertions(+), 1 deletion(-)
+
+git annotate indice.txt
+90c93c0d        (  aday-ctr     2024-10-14 16:39:33 +0100       1)Indice de los cápitulos, con conceptos avanzados de git
+2bbb386c        (  aday-ctr     2024-10-14 16:42:38 +0100       2)Indice de los cápitulos, con conceptos avanzados de git
+
+git add .
+```
+
+## Ejercicio 5
+
+### Crear una nueva rama bibliografía y mostrar las ramas del repositorio.
+
+```code
+git branch bibliografia
+
+git branch -av
+  bibliografia        2bbb386 Añadido el índice .
+* main                2bbb386 [adelante 3] Añadido el índice .
+  remotes/origin/main c01e574 Añadido capítulo 2.
+
+git add .
+```
+
+## Ejercicio 6
+
+### Crear el fichero
+
+```code
+cat > capitulos/capitulo4.txt
+En este capítulo veremos cómo usar GitHub para alojar repositorios en remoto.
+```
+Para salir usamos Ctrl+D
+
+### Hacer un commit
+
+```code
+
 ```
