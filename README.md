@@ -156,5 +156,17 @@ Indice de los cápitulos, con conceptos avanzados de git
 ### Añadir los cambios a la zona de intercambio temporal.
 
 ```code
+git add .
+```
 
+### Hacer un commit de los cambios y guardamos los cambios.
+
+```code 
+git commit -m "Se crea el indice."
+[main 90c93c0] Se crea el indice.
+ 3 files changed, 56 insertions(+), 1 deletion(-)
+ create mode 100644 indice.txt
+ create mode 100644 kj gshkbr
+
+echo "Indice de los cápitulos, con conceptos avanzados de git" >> indice.txt
 ```
