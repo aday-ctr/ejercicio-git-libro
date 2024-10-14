@@ -39,3 +39,48 @@ mkdir capitulos
 cat > capitulos/capitulo1.txt
 Git es un sistema de control de versiones ideado por Linus Torv
 ```
+
+### Añadir los cambios a la zona de intercambio temporal.
+
+```code
+git add .
+```
+
+### Hacer un commit de los cambios con el mensaje Añadido capítulo 1.
+
+```code
+git commit -m "Añadido capítulo 1."
+[main (commit-raíz) 5ad0e90] Añadido capítulo 1.
+ 2 files changed, 42 insertions(+)
+ create mode 100644 README.md
+ create mode 100644 capitulos/capitulo1.txt
+```
+
+### Volver a mostrar el historial de cambios del repositorio
+
+```code
+git log
+commit 5ad0e9060ed3d2d96fb9e4d28d4df8a1d2e2f1f5 (HEAD -> main)
+Author: aday-ctr <adaybolt@gmail.com>
+Date:   Mon Oct 14 16:03:35 2024 +0100
+
+    Añadido capítulo 1.
+```
+
+## Ejercicio 2
+
+### Creamos el fichero .txt
+
+```code
+cat > capitulos/capitulo2.txt 
+El flujo de trabajo básico con Git consiste en:
+ 1- Hacer cambios en el repositorio.
+ 2- Añadir los cambios a la zona de intercambio temporal.
+ 3- Hacer un commit de los cambios.
+```
+
+### Añadir los cambios a la zona de intercambio temporal.
+
+```code
+git add .
+```
